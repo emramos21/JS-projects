@@ -17,5 +17,19 @@
                 document.getElementById("demo").innerHTML = c;
             }    
         </script>
+        
+        <p> Enter two numbers, the result will be their product.</p>
+        Number: <input type="number" id="firstNum" value="0"> <br>
+        Number: <input type="number" id="secNum" value="0">
+        <button onclick="multiply()">Find the sum</button>
+        <p id="multiply"></p>
+        <script>
+            function multiply () {
+                let a = parseInt(document.getElementById("firstNum").value);
+                let b = parseInt(document.getElementById("secNum").value);
+                let c = a * b;
+                document.getElementById("multiply").innerHTML = c;
+            }
+        </script>
         </body>
         </html>
