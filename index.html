@@ -39,13 +39,23 @@
         <p id="capitalize"></p>
         <script>
             function capitalize() {
-                //if letters were entered, show the first letter capitalized
-                //if they were not letters show an error
                 const cap1 = document.getElementById("phrase").value;
                 let cap = cap1[0];
                 let cap2 = document.getElementById("phrase").innerHTML = cap.toUpperCase();
                 document.getElementById("capitalize").innerHTML = cap2;
             }   
+        </script>
+        <!--this is for lastLetter-->
+        <p>Enter a phrase then click the button. The result will be the last letter of the phrase.</p>
+        Phrase: <input type="text" id="lastLetter">
+        <button onclick="lastLetter()">Try me</button>
+        <p id="last"></p>
+        <script>
+            function lastLetter() {
+                const phrase = document.getElementById("lastLetter").value;
+                let stringLength = phrase.slice(-1);
+                document.getElementById("last").innerHTML = stringLength;
+            }
         </script>
         </body>
         </html>
