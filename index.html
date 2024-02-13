@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>PAGE TITLE</title>
+    </head>
+    <body>
+        Number: <input type="number" id="myNumber" value="0">
+        <p id="demo"></p>
+        <p>Enter a number. That number will be added to 7. The result will be the sum.</p>
+        <button onclick="getNumber()">Try it</button>
+        <script>
+            function getNumber () {
+                let a = parseInt(document.getElementById("myNumber").value);
+                let b = 7;
+                let c = a + b;
+                document.getElementById("demo").innerHTML = c;
+            }    
+        </script>
+        </body>
+        </html>
