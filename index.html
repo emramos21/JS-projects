@@ -41,9 +41,11 @@
             function capitalize() {
                 //if letters were entered, show the first letter capitalized
                 //if they were not letters show an error
-                let text = document.getElementById("phrase").value;
-                document.getElementById("capitalize").innerHTML = text.toUpperCase();
-            }
+                const cap1 = document.getElementById("phrase").value;
+                let cap = cap1[0];
+                let cap2 = document.getElementById("phrase").innerHTML = cap.toUpperCase();
+                document.getElementById("capitalize").innerHTML = cap2;
+            }   
         </script>
         </body>
         </html>
